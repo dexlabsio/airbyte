@@ -1,0 +1,10 @@
+{
+  "app_id": "999999999999999",
+  "access_token": "DUMMY_TOKEN",
+  "account_id": "act_99999999999",
+  "object_type": "ad",
+  "breakdown": [
+    "age",
+    "gender"
+  ]
+}

@@ -1,0 +1,25 @@
+documentationUrl: https://docsurl.com
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Dex Meta Marketing Api Spec
+  type: object
+  required:
+    - app_id
+    - access_token
+    - account_id
+  properties:
+    app_id:
+      type: string
+      description: The ID of the App we want to extract data
+    access_token:
+      type: string
+      description: The access token required to access the Marketing API
+    account_id:
+      type: string
+      description: The id of the account we want to extract data. Should start with "act_"
+    object_type:
+      type: string
+      description: The type of ad object we want to extract. Should be one of [campaign | adset | ad]
+    breakdowns:
+      type: array
+      description: The breakdowns we want to use on the data
